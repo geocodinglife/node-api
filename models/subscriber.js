@@ -3,17 +3,17 @@ const mongoose = require('mongoose')
 const subscriberSchema = new mongoose.Schema({
   name: {
     type: String,
-    require: true
+    required: true
   },
 
-  subscribersToChannel: {
+  subscribedToChannel: {
     type: String,
-    require: true
+    required: true
   },
 
-  subscribersDate: {
+  subscribeDate: {
     type: Date,
-    require: true,
+    required: true,
     default: Date.now
   }
 })
